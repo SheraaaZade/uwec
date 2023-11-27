@@ -1,0 +1,53 @@
+Solution les patterns trouvés:
+
+Abstract Factory:
+Abstract factory -> ShapeFactory
+Concrete factory 1 -> CircleFactory
+Concrete factory 2 -> GeneralShapeFactory
+Client -> Kaleidoscope
+AbstractProductA -> Shape
+Product A1 -> Rectangle
+Product A2 ->  Square
+Product A3 ->  Triangle
+
+CreateProduct() -> createShape()
+
+
+Observer:
+Observer -> KaleidoscopeView
+                -> update() turn()
+Subject -> Kaleidoscope
+                -> ObserverCollection = the Views
+                -> registerObserver = register
+                    notifyObservers = turn
+Concrete -> Fly KaleidoscopeView
+            NegativeKaleidoscopeView
+            RotateKoleidoscope
+            update()
+
+Strategy:
+
+
+Composite:
+Icomponent -> ShapeMotationS
+Composite -> CompositeShapeMotationS
+Leaf -> ExplodeSMS, GrowSMS, ImplodeSMS, SpinSMS
+Operation() -> Mutate()
+
+Template method:
+AbstractClass -> KaleidoscopeView
+TemplateMethod() -> paint()
+ConcreteClass -> FlipKaleidoscopeView(), NegativeKaleidoscopeView(), RotateKaleidoscopeView(), TraditionalKaleidoscopeView()
+PrimitiveOperation1() -> drawShapes(Graphics g)
+
+Template method:
+AbstractClass -> Shape
+TemplateMethod() ->
+ConcreteClass ->
+PrimitiveOperation1() ->
+
+Adapter -> ShapeVector()
+
+Prototype -> 	public abstract Shape copy();
+
+Observer: KaleidoscopeControle car on peut ajouter avec la méthode register et parcourir avec run()
